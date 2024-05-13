@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник по Pascal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header  >
+        <h3 align="center" >Сдам информатику!</h3>
+        <div class="button" id="q228">
+            <button class="q1" onclick="window.location.href='main.html'" >Главная</button>
+            <div class="dropdown">
+                
+                <button class="dropbtn">Справочники по языкам  программирования</button>
+                <div class="dropdown-content">
+                  <a href="справочник_по_python.html">Python</a>
+                  <a href="справочник_по_Pascal.html">Pascal</a>
+                  <a href="справочник_по_C++.html">C++</a>
+                </div>
+              </div>
+            
+            <button class="q1" value="Stop">Сгенирировать тренировачный вариант</button>
+            <button class="q1" onclick="window.location.href='Об_экзамене.html'" >Об экзамене</button>
+            <button class="q1" onclick="window.location.href='#'">Сообщить об ошибке</button>
+        </div>
+        
+        
+    </header>
+    <h3 align="center">Справочник по Pascal</h3>
+    <h3 >Содержание</h3>
+   <ul>
+    
+        <li><a href="#t1">Структура программы на Паскале
+            
+        </a>
+        <li><a href="#t2">Операторы вывода (writeln, write)
+            
+        </a>
+        <li><a href="#t3">Оператор ввода (readln, read)
+            
+        </a>
+        <li><a href="#t4">Типы переменных (числовые: real, integer символьные )
+        <li>
+            <a href="#t14">
+                Случайные числа (random)
+            </a>
+        </li>
+        </a>
+        <li><a href="#t5">Оператор перехода по метке (goto m)
+            
+            
+        </a>
+        <li><a href="#t6">Оператор цикла (for do)
+            </a>
+        <li>
+            <a href="#t7">Операторы условия (if then)
+                
+            </a>
+        </li>
+        <li>
+            <a href="#t8">
+                Массивы
+            </a>
+        </li>
+        <li>
+            <a href="#t9">
+                Логическая конструкция "Сумматор"
+            </a>
+        </li>
+        <li>
+            <a href="#t10">Логическая конструкция "Определитель кратности"
+                
+            </a>
+        </li>
+        <li>
+            <a href="#t11">
+                Логическая конструкция "Определение максимума и минимума"
+            </a>
+        </li>
+        <li>
+            <a href="#t12">
+                Ввод и вывод данных
+            </a>
+        </li>
+        <li>
+            <a href="#t13">
+                Процедуры и функции
+    для управления программой
+            </a>
+        </li>
+        
+        <li>
+            <a href="#t17">
+                Процедуры
+            </a>
+        </li>        
+        <li>
+            <a href="#t15">Преобразования данных
+                
+            </a>
+        </li>
+        <li>
+            <a href="#t16">
+                Процедуры
+            </a>
+        </li>
+    
+   </ul>
+    <h3 align="center" id="t1">Структура программы на Паскале</h3>
+    <p class="line1"><b>uses crt;</b>{список подключаемых библиотек}<br>
+        <b>var</b> {описатель используемых}<br>    
+        <b>c:string;</b>{c строковая переменная}<br>   
+        <b>begin;</b>{начало программы}<br>    
+        <b>writeln ('всем привет');</b>{напечатать на экране сообщение'Всем привет'}<br>   
+        <b>readln;</b><br>
+        <b>end.</b></p>
+      <h3 align="center" id="t2">Операторы вывода (writeln, write)</h3>
+    <p class="line1">
+        <b>uses crt;</b>{Список подключаемых библиотек}<br>
+        <b>var</b>{Описатель используемых переменных}<br>
+        <b>begin;</b>{Начало программы}<br>
+        <b>writeln ('Здравствуйте Вас приветствует Паскаль ');</b>
+        {напечатать на экране сообщение 'Здравствуйте Вас приветствует Паскаль '};<br>
+        <b>writeln(100+100);</b>{Выведет сумму 2 чисел - 200 }<br>
+        <b>readln;</b><br>
+        <b>end.</b>{конец программы}
+    </p>
+        <h3 align="center" id="t3">Оператор ввода (readln, read)</h3>
+        <p class="line1">
+            <b>uses crt;</b>{Список подключаемых библиотек}<br>
+            <b>var</b>{Описатель используемыхпеременных}<br>
+            <b>c:string;</b>{c строковая переменная}<br>
+            <b>begin;</b>{Начало программы}<br>
+            <b>writeln ('Здравствуйте как ваше имя? ');</b>{напечатать на экране сообщение 'Здравствуйте как ваше имя ? '};<br>
+            <b>readln (c);</b>{Ввести в символьную C свое имя}<br>
+            <b>writeln ('Добро пожаловать ', c);</b> {Выведет добро пожаловать введенное имя}<br>
+            <b>readln;</b><br>
+            <b>end.</b>{конец программы}
+        </p>
+            <h3 align="center" id="t4">Типы переменных (числовые: real, integer символьные )</h3>
+            <p class="line1">
+                <b>uses crt;</b>{Список подключаемых библиотек}<br>
+                <b>var</b>{Описатель используемых переменных}<br>
+                <b>c, m:string;</b>{c, m строковые символьные переменная}<br>
+                <b>a:integer;</b>{a числовая переменная целого типа}<br>
+                <b>p:real;</b>{P числовая переменная Действительного типа}<br>
+                <b>begin;</b>{Начало программы}<br>
+                <b>c:=’Школе 461’;</b>{Записать в ячейку C строку ’Школе 461’ }<br>
+                <b>m:=’Лет’;</b>{Записать в ячейку M строку ’Лет’}<br>
+                <b>a:=29;</b>{Записать в ячейку A целое число ’29’}<br>
+                <b>p:=3.14;</b>{Записать в ячейку P дробное число ’3.14’}<br>
+                <b>write(c, ' ' );</b>{напечатать на экране сообщение ' Школе 461'};<br>
+                <b>write(a+1, ' ' );</b>{напечатать на экране сообщение '30'};<br>
+                <b>write(m, ' ' );</b>{напечатать на экране сообщение ' Лет '};<br>
+                <b>write('Число Pi= ',p );</b> {напечатать на экране сообщение ' ЧислоPi=3.14’};<br>
+                <b>readln;</b><br>
+                <b>end.</b>{конец программы}</p>
+                <h3 align="center" id="t14">Случайные числа (random)</h3>
+                    <p class="line1">
+                        <b>uses crt;</b> {Список подключаемых библиотек}<br>
+                        <b>var</b> {Описатель используемых переменных}<br>
+                        <b>a,b,c:integer</b> {a,b,c Целые числа}<br>
+                        <b>begin;</b> {Начало программы}<br>
+                        <b>a:=random(10)</b> {Записать в переменную a случайное число в диапазоне от 0-10}<br>
+                        <b>b:=random(10)+5</b> {Записать в переменную b случайное число в диапазоне от 5-15}<br>
+                        <b>c:=10-random(20)</b> {Записать в переменную c случайное число в диапазоне от -10..10}<br>
+                        <b>writeln(' a=',a,' b=',b,' c='c);</b> {напечатать на экране значения переменных a,b,c}<br>
+                        <b>readln;</b><br>
+                        <b>end</b> {конец программы}
+                    </p>
+                        <h3 align="center" id="t5">Оператор перехода по метке (goto m)</h3>
+                        <p>Создание бесконечного цикла</p>
+                        <p class="line1">
+                            
+                                <b>uses crt;</b> {Список подключаемых библиотек}<br>
+                                <b>label M;</b> {Описание метки перехода}<br>
+                                <b>var</b> {Описатель используемых переменных}<br>
+                                <b>c:string;</b> {c строковая переменная}<br>
+                                <b>begin;</b> {Начало программы}<br>
+                                <b>writeln('Здраствуйте как ваше имя ? ');</b> {напечатать на экране сообщение 'Здраствуйте как ваше имя ? '};<br>
+                                <b>readln (c);</b> {Ввести в символьную C свое имя}<br>
+                                <b>M: writeln('Добро пожаловать ', c);</b> {Выведет добро пожаловать введенное имя}<br>
+                                <b>goto M:</b> {Переход на строку M}<br>
+                                <b>end.</b> {конец программы}
+                        </p>
+                        <h3 align="center" id="t6">Оператор цикла (for do)</h3>
+                        <p>Создание ограниченого цикла</p>
+                        <p class="line1">
+                            <b>uses crt;</b> {Список подключаемых библиотек}<br>
+                            <b>var</b> {Описатель используемых переменных}<br>
+                            <b>c:string;</b> {c строковая переменная}<br>
+                            <b>begin;</b> {Начало программы}<br>
+                            <b>writeln('Здраствуйте как ваше имя ? ');</b> {напечатать на экране сообщение 'Здраствуйте как ваше имя ? '};<br>
+                            <b>readln (c);</b> {Ввести в символьную C свое имя}<br>
+                            <b>for n:=1 to 1000 do </b> {Создать цикл от 1 до 1000}<br>
+                            <b>begin;</b> {Начало тела цикла}<br>
+                            <b>writeln('Добро пожаловать ', c);</b> {Выведет добро пожаловать введенное имя}<br>
+                            <b>end;</b> {Конец тела цикла}<br>
+                            <b>end.</b> {конец программы}</p>
+<h3 align="center" id="t7">Операторы условия (if then)</h3>
+<p class="line1">
+    <b>uses crt;</b> {Список подключаемых библиотек}<br>
+    <b>var </b>{Описатель используемых переменных}<br>
+    <b>c,d:string;</b> {c,d строковая переменная}<br>
+    <b>begin;</b> {Начало программы}<br>
+    <b>writeln ('Здраствуйте как ваше? ');</b> {напечатать на экране сообщение 'Здравствуйте как ваше имя ? '}';<br>
+    <b>readln (c);</b> {ввод имени в переменную C}<br>
+    <b>writeln('Введи пароль');</b><br>
+    <b>readln (d);</b> {ввод пароля в переменную C}<br>
+    <b>if d='хрюша' then writeln('Приветствую вас ', c)</b> {Если d='хрюша' тогда приветствие}<br>
+    <b>else</b> {Иначе 'Вон отсюда негодяй }<br>
+    <b>writeln('Вон отсюда негодяй ', c);</b><br>
+    <b>readln;</b><br>
+    <b>end.</b> {конец программы}</p>
+    <h3 align="center" id="t8">Массивы</h3>
+    <p>Создание, заполнение числового одномерного массива на 10 элементов.
+        Вывод значений элементов массива его на экран.</p>
+    <table class="table">
+        <tr>
+            <th>Spis(массив)</th><th>-3.2</th><th>24</th><th>11</th><th>-5</th><th>1.1</th><th>99</th><th>1015</th><th>3.3</th><th>17.2</th><th>44</th>
+        </tr>
+        <tr>
+            <th>K(номер яч)</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+
+
+
+    </table>
+    <p class="line1">
+        <b>uses crt;</b> {Список подключаемых библиотек}<br>
+        <b>var</b> {Описание используемых переменных}<br>
+        <b>k,:integer;</b> {K целое число}<br>
+        <b>spis:array[1..10] of real;</b> {Создать массив с именем ‘spis’ на 10 мест, для записи действительных чисел}<br>
+        <b>n:real;</b> {N переменная для записи чисел введенных с клавиатуры}<br>
+        <b>begin;</b> {Начало программы}<br>
+        <b>for k:=1 to 10 do</b> {Создать цикл от 1 до 10}<br>
+        <b>begin;</b> {Начало тела цикла}<br>
+        <b>write('Введите число ');</b> {Печать сообщения Введите число }<br>
+        <b>readln(n);</b> {Ввод числа с клавиатуры в переменную n}<br>
+        <b>spis[k]:=n;</b> {Запись числа N в ячейку K массива 'spis’}<br>
+        <b>end;</b> {Конец тела цикла}{Вывод содержимого массива 'spis’ на экран}<br>
+        <b>for k:=1 to 10 do</b> {Создать цикл от 1 до 10}<br>
+        <b>begin;</b> {Начало тела цикла}<br>
+        <b>write(' spis [‘,k,’]=’,spis[n]);</b> {Печать содержимого массива ‘spis’ ячейки K }<br>
+        <b>end;</b> {Конец тела цикла}<br>
+        <b>end;</b> {конец программы}
+        
+    </p>
+    <h3 align="center" id="t9">Логическая конструкция "Сумматор"</h3>
+    <p>Программа вычисляет сумму всех введенных чисел</p>
+    <p class="line1">
+        
+        <b>uses crt;</b> {Список подключаемых библиотек}<br>
+        <b>label M;</b> {Описание метки перехода}<br>
+        <b>var</b> {Описатель используемых переменных}<br>
+        <b>s,n:integer;</b> {s целое число}<br>
+        <b>begin;</b> {Начало программы}<br>
+        <b>s:=0;</b> {Установка счетчика на 0}<br>
+        <b>write('Введите число ');</b> {Печать сообщения Введите число }<br>
+        <b>readln(n);</b> {Ввод числа с клавиатуры в переменную n}<br>
+        <b>M: s:=s+n;</b> {Сумматор накапливает сумму введенных чисел}<br>
+        <b>writeln('Сумма чисел равна ',s);</b> {Напечатать значение S};<br>
+        <b>Goto M:</b> {Переход на строку M}<br>
+        <b>end;</b> {конец программы}
+
+    </p>
+    <h3 align="center"id=t10>Логическая конструкция "Определитель кратности"</h3>
+    <p>Программа определяет все числа кратные трем. 
+        Использует ограниченный цикл For do</p  >
+    <p class="line1">
+        <b>uses crt;</b> {Список подключаемых библиотек}<br>
+        <b>var</b> {Описатель используемых переменных}<br>
+        <b>k,:integer;</b> {K целое число}<br>
+        <b>n:real;</b><br>
+        <b>begin;</b> {Начало программы}<br>
+        <b>for k:=1 to 10 do</b> {Создать цикл от 1 до 10}<br>
+        <b>begin;</b> {Начало тела цикла}<br>
+        <b>write('Введите число ');</b> {Печать сообщения Введите число }<br>
+        <b>readln(n);</b> {Ввод числа с клавиатуры в переменную n}<br>
+        <b>if (n /3 )=int(n/3) then writeln('Число ',n, ' кратно трем');</b> {Если условие верно напечатается сообщение 'Число ',n, ' кратно трем'}<br>
+        <b>end;</b> {Конец тела цикла}<br>
+        <b>end;</b> {конец программы}
+    </p>
+    <h3 align="center" id="t11">Логическая конструкция "Определение максимума и минимума"</h3>
+    <p >Определение минимального и максимального из 10 введенных чисел</p>
+    <p class="line1"><br>
+        <b>uses crt;</b> {Список подключаемых библиотек}<br>
+        <b>va</b>r {Описатель используемых переменных}<br>
+        <b>k,:integer;</b> {K целое число}<br>
+        <b>n:real;</b><br>
+        <b>min,max:real;</b> {Действительные числа. Могут иметь дробную составляющую min-Минимальное число Max-максимальное}<br>
+        <b>begin;</b> {Начало программы}<br>
+        <b>for k:=1 to 10 do</b> {Создать цикл от 1 до 10}<br>
+        <b>begin;</b> {Начало тела цикла}<br>
+        <b>write('Введите число ');</b> {Печать сообщения Введите число }<br>
+        <b>readln(n);</b> {Ввод числа с клавиатуры в переменную n}<br>
+        <b>if k=1 then begin;</b> {Приравниваем Min ми Max первому введенному числу. Текущее число вводимое с клавиатуры N}<br>
+        <b>min:=n;</b><br>
+        <b>max:=n;</b><br>
+        <b>end;</b><br>
+        <b>if min>n then min:=n;</b> {Если значение Min > числа введенного с клавиатуры, Min принимает значение Введенного числа}<br>
+        <b>if max&ltn then max:=n;</b> { Если значение Max < числа введенного с клавиатуры, Max принимает значение Введенного числа }<br>
+        <b>end;</b> {Конец тела цикла}<br>
+        <b>writeln(‘Минимальное чиcло = ’,Min);</b> {Вывод на экран Минимального из введенных чисел}<br>
+        <b>writeln(‘Максимально чиcло = ’,Max);</b> {Вывод на экран максимального из введенных чисел}<br>
+        <b>readln;</b><br>
+        <b>end;</b> {конец программы}       
+    </p>
+    <h2 align="center" id="t12">Ввод и вывод данных</h2>
+    <table class="table">
+        <tr >
+            <th >Процедура (функция)</th>
+            <th >Назначение</th>
+            <th >Пример вызова</th>
+        </tr>
+        <tr>
+            <th  align="left">read (х)</th>
+            <th class="text"  align="left">ввод данных<br>
+                (клавиатура)</th>
+            <th class="text"  align="left">read(a, b, c)</th>
+        </tr>
+        <tr>
+            <th  align="left">Readln(х)</th>
+            <th class="text"  align="left">ввод данных, пропуск<br>
+                маркера конца строки</th>
+            <th class="text"  align="left">readln(a, b, c)</th>
+        </tr>
+        <tr>
+            <th  align="left">Write (х)</th>
+            <th class="text"  align="left">вывод данных (экран)</th>
+            <th class="text"  align="left">write(‘n = ’,n:10)<br>
+                write(‘n = ‘,n:p:q)</th>
+        </tr>
+        <tr>
+            <th  align="left">Writeln (х)</th>
+            <th class="text"  align="left">вывод данных, вывод<br>
+                маркера конца строки</th>
+            <th class="text" align="left">writeln(‘?’:s+2)<br>
+                writeln(‘’:spaces)</th>
+        </tr>
+        <tr>
+            <th align="left">Clrscr</th>
+            <th class="text" align="left">очистить весь экран<br>
+                (окрасить в цвет фона)</th>
+            <th class="text" align="left">clrscr</th>
+        </tr>
+        <tr>
+            <th align="left">Textcolor (цвет)</th>
+            <th align="left">выбрать цвет символа</th>
+            <th align="left">textcolor(magenta)</th>
+        </tr>
+        <tr>
+            <th align="left">Textbackground
+                (цвет)</th>
+            <th align="left">выбрать цвет фона</th>
+            <th align="left">textbackground(0)</th>
+        </tr>
+        <tr>
+            <th align="left">Window (x1, y1, x2,
+                y2)</th>
+            <th align="left">окно (x1, y1) - (x2, y2)</th>
+            <th align="left">window(1, 1, 40, 10)</th>
+        </tr>
+        <tr>
+            <th align="left">Wherex</th>
+            <th align="left">позиция курсора
+                x - номер колонки</th>
+            <th align="left">x := wherex</th>
+        </tr>
+        <tr align="left">
+            <th >Gotoxy (x, y)</th>
+            <th >установить курсор в
+                положение (x, y);<br>   
+                x - колонка [1 .. 80];
+                y - строка [1 .. 25];</th>
+            <th >gotoxy(40, 10)
+                gotoxy(50, wherey)</th>
+        </tr>
+    </table>
+<h3 align="center" id="t13">Процедуры и функции
+    для управления программой</h3>
+    <table class="table">
+        <tr>
+            <th align="left">halt
+                (результат)</th>
+            <th align="left">выход из программы, результат - код завершения
+                (целое число)</th>
+        </tr>
+        <tr>
+            <th align="left">exit</th>
+            <th align="left">выход из процедуры или функции пользователя</th>
+        </tr>
+        <tr>
+            <th align="left">break</th>
+            <th align="left">выход из цикла</th>
+        </tr>
+        <tr>
+            <th align="left">readkey</th>
+            <th align="left">остановка программы до нажатия клавиши;<br>
+                значение функции - код нажатой клавиши (символа);<br>
+                символ клавиши на экране монитора не отображается.</th>
+        </tr>
+        <tr>
+            <th align="left">delay(время)</th>
+            <th align="left">остановка программы;<br>
+                время - время задержки (миллисекунды (мс))<br>
+                1 мс. = 1 / 1000 с.</th>
+        </tr>
+
+    </table>
+    <h3 align="center" id="t17">Процедуры</h3>
+    <table class="table">
+        <tr>
+            <th>Процедура</th>
+            <th>Назначение</th>
+            <th>Пример вызова   </th>
+            <th>Результат</th>
+        </tr>
+        <tr>
+            <th align="left">inc(число)</th>
+            <th align="left">Увеличить на 1</th>
+            <th align="left">inc(n)</th>
+            <th align="left">n := n + 1</th>
+        </tr>
+        <tr>
+            <th align="left">dec(число)</th>
+            <th align="left">Уменьшить на 1</th>
+            <th align="left">dec(n)</th>
+            <th align="left">n := n - 1</th>
+        </tr>
+    </table>
+    <h3 align="center" id="t15">Преобразования данных</h3>
+    <table class="table">
+        <tr>
+            <th>Процедура
+                (функция)</th>
+            <th>Назначение</th>
+            <th>Пример
+                вызова</th>
+            <th>Результат</th>
+        </tr>
+        <tr>
+            <th align="left">round(число)</th>
+            <th align="left">округлить число</th>
+            <th align="left">n := round(3.5)</th>
+            <th align="left">4</th>
+        </tr>
+        <tr>
+            <th align="left">trunc(число)</th>
+            <th align="left">отсечь дробную
+                часть</th>
+            <th align="left">n := trunc(3.5)</th>
+            <th align="left">3</th>
+        </tr>
+        <tr>
+            <th align="left">str(n: p: q, s)</th>
+            <th align="left">преобразовать
+                число n в строку s</th>
+            <th align="left">str(3.5:3, s)</th>
+            <th align="left">s = ‘3.5’</th>
+        </tr>
+        <tr>
+            <th align="left">val(s, n, p)</th>
+            <th align="left">преобразовать
+                строку s (литеру) в
+                число n</th>
+            <th align="left">val(‘+3.5’, n, p)</th>
+            <th align="left">n = 3.5; p = 0
+                p = место
+                ошибки</th>
+        </tr>
+    </table>
+    <h3 align="center" id="t16">Процедуры</h3>
+    <table class="table">
+        
+        <tr>
+            <th>Процедура</th>
+            <th>Назначение</th>
+            <th>Пример
+                вызова</th>
+            <th>Пример
+                вызова</th>
+        </tr>
+        <tr align="left">
+            <th>assign(file, имя)</th>
+            <th>назначить файл для
+                файловой переменной</th>
+            <th>assign(f, ’a:
+                text’)
+                assign(f, path)</th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>close(file)</th>
+            <th>закрыть файл</th>
+            <th>close(f)</th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>reset(file
+                [,длина-з.])</th>
+            <th>открыть файл</th>
+            <th>reset(f)</th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>rewrite(file
+                [,длина-з.])</th>
+            <th>создать файл</th>
+            <th>rewrite(f, 1)</th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>append(file)</th>
+            <th>открыть для добавления</th>
+            <th>append(f)</th>
+            <th>Text</th>
+        </tr>
+        <tr align="left">
+            <th>read(file,
+                данные)</th>
+            <th>ввод данных</th>
+            <th>read(f, mydata)</th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>readln(file,
+                данные)</th>
+            <th>ввод данных,
+                пропуск конца строки</th>
+            <th>readln(f, a, b, c)</th>
+            <th>Text</th>
+        </tr>
+        <tr align="left">
+            <th>write(file,
+                данные)</th>
+            <th>вывод данных</th>
+            <th>write(f, mydata)th>
+            <th>Все
+                файлы</th>
+        </tr>
+        <tr align="left">
+            <th>writeln(file,
+                данные)</th>
+            <th>вывод данных,
+                вывод конца строки</th>
+            <th>writeln(f,
+                a:10:2)</th>
+            <th>Text</th>
+        </tr>
+        <tr align="left">
+            <th>blockread(f,
+                данные, n,
+                результат)</th>
+            <th>ввод блока из n записей,
+                результат = сколько
+                передано</th>
+            <th>blockread(f, a,
+                50,p)</th>
+            <th>File</th>
+        </tr>
+        <tr align="left">
+            <th>blockwrite(f,
+                данные, n,
+                результат)</th>
+            <th>вывод блока из n записей 
+                результат = сколько
+                передано</th>
+            <th>blockwrite(f,
+                a,50,p)</th>
+            <th>File</th>
+        </tr>
+        <tr align="left">
+            <th>seek(file, номер
+                позиции)</th>
+            <th>установить номер
+                позиции для обмена
+                [0;n], n = число записей</th>
+            <th>seek(f, 0)</th>
+            <th>Кроме
+                text</th>
+        </tr>
+        
+    </table>
+</body>
+</html>
